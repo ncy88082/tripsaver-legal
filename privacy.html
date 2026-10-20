@@ -23,9 +23,9 @@ ul{padding-left:1.3em}
 <body>
 <main>
 <h1>出國省算盤 隱私權政策</h1>
-<p class="date">生效日期：2026 年 10 月 9 日　最後更新：2026 年 10 月 18 日</p>
+<p class="date">生效日期：2026 年 10 月 9 日　最後更新：2026 年 10 月 20 日</p>
 
-<p>出國省算盤不需要註冊或登入，也不會要求你的姓名、Email、電話等個人資料。開發者不販售任何資料。只有在你使用「目標價提醒」或「驚喜模式」時，App 會把一組隨機產生的匿名識別碼、推播識別碼與你設定的提醒存到雲端，用來寄送通知（詳見下表）。本政策適用於 Android 版與 iPhone 版 App。</p>
+<p>出國省算盤不需要註冊或登入就能使用；平常只用一組隨機產生的匿名識別碼。只有你選擇「用 Google 登入」或「用 Apple 登入」（加購整理次數時需要）時，App 才會取得該帳號的 Email（Apple 可選擇隱藏真實 Email），用來把加購的次數綁在你的帳號上。App 不會要求你的姓名、電話等其他個人資料，開發者不販售任何資料（詳見下表）。本政策適用於 Android 版與 iPhone 版 App。</p>
 
 <h2>資料怎麼處理</h2>
 <div class="tbl">
@@ -35,6 +35,8 @@ ul{padding-left:1.3em}
 <tr><td>外觀、通知開關、通知範圍、收藏、省錢紀錄、常用篩選、預算等設定</td><td>只存在你的手機</td><td>重開 App 時保留你的設定；移除 App 或在「我的」頁按「清除個人設定」就會刪除</td></tr>
 <tr><td>推播識別碼（Firebase 雲端通訊；iPhone 另經 Apple 推播服務）</td><td>Google、Apple</td><td>把降價通知送到你的手機。一般降價通知只發送到你選的主題，開發者不會拿到個別識別碼</td></tr>
 <tr><td>目標價提醒、驚喜模式的設定（匿名識別碼、推播識別碼、手機系統類型、提醒的航線或行程名稱與目標價、驚喜模式的折扣門檻）</td><td>Google Firebase（只有你的手機與開發者的通知程式能讀取）</td><td>只在你設定這兩種提醒時才上傳，用來在價格達到條件時通知你。匿名識別碼由 Firebase 隨機產生，和你的姓名、帳號、Email 都沒有關聯。取消所有提醒、關閉驚喜模式或關閉 App 推播後，這份資料會自動刪除</td></tr>
+<tr><td>登入帳號（只有選擇登入時：Google 或 Apple 帳號的識別碼與 Email）</td><td>Google Firebase Authentication</td><td>讓你換手機、重裝 App 後，登入同一個帳號就能繼續使用加購的次數。不用於行銷，也不寄送廣告信。可隨時在「我的 → 帳號」登出或刪除帳號</td></tr>
+<tr><td>使用次數與加購次數（帳號識別碼、本月與當天的整理次數、加購次數餘額與交易編號）、兌換碼開通紀錄、許願池投票</td><td>Google Firebase（只有你自己的手機與開發者的雲端程式能讀取）</td><td>計算「整理額外花費」的每月次數與加購次數、確認兌換碼開通的進階版，以及統計許願池票數（只公開總票數，不公開是誰投的）</td></tr>
 <tr><td>訂閱狀態（匿名的購買者識別碼、購買與續訂紀錄）</td><td>RevenueCat（訂閱管理服務）</td><td>確認這支手機的商店帳號有沒有有效的進階版訂閱。RevenueCat 不會取得你的信用卡或付款資料</td></tr>
 <tr><td>機票、團費價格</td><td>Google Firebase（公開資料）</td><td>App 讀取顯示，不含你的任何資料</td></tr>
 </tbody>
@@ -47,22 +49,24 @@ ul{padding-left:1.3em}
 </ul>
 
 <h2>付款與第三方服務</h2>
-<p>進階版訂閱全程由 Google Play（Android）或 App Store（iPhone）處理付款，開發者拿不到你的信用卡或付款資料。App 透過 RevenueCat 向商店確認「這個帳號是否有有效訂閱」，以決定是否開放進階功能。</p>
+<p>進階版訂閱與加購次數全程由 Google Play（Android）或 App Store（iPhone）處理付款，開發者拿不到你的信用卡或付款資料。App 透過 RevenueCat 向商店確認「這個帳號是否有有效訂閱」，以決定是否開放進階功能。</p>
 <p>以下服務各自的隱私權政策也適用：</p>
 <ul>
 <li>Google Play 與 Firebase：<a href="https://policies.google.com/privacy">Google 隱私權政策</a></li>
 <li>App Store 與 Apple 推播服務：<a href="https://www.apple.com/tw/legal/privacy/">Apple 隱私權政策</a></li>
 <li>RevenueCat：<a href="https://www.revenuecat.com/privacy/">RevenueCat 隱私權政策</a></li>
+<li>「整理額外花費」會把旅行團的公開行程文字送到 Anthropic 的 Claude 進行整理，只包含旅行社網站上的行程內容，不含你的任何資料：<a href="https://www.anthropic.com/legal/privacy">Anthropic 隱私權政策</a></li>
 <li>點「前往訂票」「看這團」會開啟航空公司、旅行社或訂票網站，之後的瀏覽與下單依該網站的政策處理；本 App 不經手任何訂單。</li>
 </ul>
 
 <h2 id="delete">刪除資料</h2>
 <p>App：出國省算盤（Google Play、App Store）　開發者：han chang</p>
-<p>本 App 沒有帳號，存在雲端的只有你設定「目標價提醒」或「驚喜模式」時上傳的資料（匿名識別碼、推播識別碼、手機系統類型、提醒的航線或行程名稱與目標價、驚喜模式的折扣門檻）。刪除方式：</p>
+<p><strong>有登入（Google／Apple）：</strong>打開 App，到「我的 → 帳號 → 刪除帳號」，確認後會立即刪除登入帳號，以及雲端上這個帳號的所有資料（提醒設定、使用次數、加購次數餘額、兌換碼紀錄、許願池投票、RevenueCat 的購買紀錄）。刪除帳號不會取消商店的訂閱，要停止扣款請到 Google Play 或 App Store 取消訂閱；沒用完的加購次數不退費。</p>
+<p><strong>沒有登入：</strong>存在雲端的是你設定「目標價提醒」或「驚喜模式」時上傳的資料，以及使用次數、許願池投票等匿名紀錄。刪除方式：</p>
 <ol>
 <li>打開 App，到「我的 → 目標價提醒」，把提醒逐一取消。</li>
-<li>回到「我的」，關閉「驚喜模式」（或直接關閉「App 推播」）。</li>
-<li>完成後，雲端上這支手機的提醒資料會立即刪除，不另外保留。</li>
+<li>回到「我的」，關閉「驚喜模式」（或直接關閉「App 推播」），雲端上這支手機的提醒資料會立即刪除。</li>
+<li>其他匿名紀錄可來信要求刪除（見下方）。</li>
 </ol>
 <p>也可以來信 <a href="mailto:ncy88082@gmail.com?subject=出國省算盤 刪除資料">ncy88082@gmail.com</a> 要求刪除，收到後 7 天內處理。存在手機上的設定（收藏、省錢紀錄等），在「我的」按「清除個人設定」或移除 App 即會刪除。訂閱紀錄由 Google Play、App Store 與 RevenueCat 依各自政策保存，開發者無法刪除。</p>
 
